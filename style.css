@@ -1,17 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+body {
+    font-family: 'roboto', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
 
 }
+@media (max-width: 768px) {
+     .side-bar {
+        display: none   ;
+     }
+}
+
 .left {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+.left #menu {
+    padding: 0 7px;
+    cursor: pointer;
 }
 .center {
     display: flex;
-    justify-content: space-between;
+    
 }
-.left {
+.center form {
     display: flex;
-    justify-content: space-between;
+    border: 1px solid #ddd;
+    height: 45px;
 }
+.center button {
+    height: 100%;
+    width: 60px;
+    border: none;
+}
+.mic {
+    margin-top: 10px;
+}
+.center input {
+    width: 600px;
+    height: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 2px 0 0 2px;
+}
+input:focus {
+
+    outline: none;
+    border: 1px solid #ddd;
+}
+.material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0, 7px;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+.side-bar {
+    height: 100%;
+    width: 17%;
+    overflow-y: hidden;
+}
+
+/* Now comes the center part under the heading section */
